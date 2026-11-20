@@ -1,17 +1,23 @@
 <div align="center">
 
-# GITHUB_REPO_NAME
+# Protokit
 
-This repository is a template for Dogmatiq Go modules.
-
-[![Documentation](https://img.shields.io/badge/go.dev-documentation-007d9c?&style=for-the-badge)](https://pkg.go.dev/github.com/dogmatiq/GITHUB_REPO_NAME)
-[![Latest Version](https://img.shields.io/github/tag/dogmatiq/GITHUB_REPO_NAME.svg?&style=for-the-badge&label=semver)](https://github.com/dogmatiq/GITHUB_REPO_NAME/releases)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/dogmatiq/GITHUB_REPO_NAME/ci.yml?style=for-the-badge&branch=main)](https://github.com/dogmatiq/GITHUB_REPO_NAME/actions/workflows/ci.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/dogmatiq/GITHUB_REPO_NAME/main.svg?style=for-the-badge)](https://codecov.io/github/dogmatiq/GITHUB_REPO_NAME)
+Protocol Buffers code generation for Dogma applications.
 
 </div>
 
-New repositories are created by adding to the Terraform configuration in
-[`dogmatiq/repos`](https://github.com/dogmatiq/repos). Do not manually create
-repositories. After the new repository is created, replace the string `GITHUB_REPO_NAME` in
-all files with the actual repo name.
+Protokit is a planned `protoc` plugin for generating Dogma integration alongside
+standard Protocol Buffers code. The initial target is Go, with annotations
+intended to support equivalent behavior in other languages later.
+
+The agreed initial scope includes message roles and UUIDs, automatic message
+registration, binary serialization, and validation adapters for Protovalidate.
+Description templates and snapshot versioning need further design.
+
+See the [design notes] for the feature decisions, constraints, and open
+questions. This repository currently contains planning documentation; the
+implementation has not been published here.
+
+<!-- references -->
+
+[design notes]: docs/design.md
